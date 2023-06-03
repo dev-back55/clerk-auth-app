@@ -1,0 +1,20 @@
+.footerbar {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    gap: 1rem;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: center;
+    font-family: Ubuntu;
+    font-size: 1rem;
+    font-weight: 600;
+    background: rgba(255,255,255,0.15);
+    box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+    backdrop-filter: blur(6.3px);
+    -webkit-backdrop-filter: blur(6.3px);
+}
+
+.linkbar {
+    color: rgb(0, 85, 255);
+}

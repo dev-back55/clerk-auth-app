@@ -1,0 +1,14 @@
+.dashboard {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(237, 237, 7);
+    z-index: -1;
+    padding: 5rem;
+    background-image: url('https://res.cloudinary.com/djdp4cavt/image/upload/v1678762355/my-uploads/vyn1yvktzy1bsbdcnfxr.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

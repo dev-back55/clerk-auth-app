@@ -1,0 +1,52 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 1rem;
+    gap: 1rem;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: center;
+    /* background-color: rgb(34, 186, 241); */
+    font-family: Ubuntu;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background: rgba(255,255,255,0.15);
+    box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+    backdrop-filter: blur(6.3px);
+    -webkit-backdrop-filter: blur(6.3px);
+    position: fixed;
+    z-index: 9;
+}
+
+.brand {
+        display: flex;
+        gap: 0.5rem;
+}
+
+.brandlink:hover {
+        color: rgb(9, 98, 241);
+}
+
+.dashlink:hover {
+        color: crimson;
+        }
+.loginbutton {   
+        min-width: 130px;
+        height: 40px;
+        color: #fff;
+        padding: 5px 10px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        outline: none;
+        border-radius: 20px;
+        border: 2px solid #4433ff;
+        background: #4433ff;
+}
+.loginbutton:hover {
+        background: #fff;
+        color: #4433ff
+}
