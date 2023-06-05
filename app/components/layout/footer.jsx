@@ -5,9 +5,10 @@ const Footer = () => {
   return (
     <footer>
       <div className={styles.footerbar}>
-        <h5 >iTech CO.</h5>
+        <h5 >SofTech CO.{' '}{'{'}tu futuro, nuestro código{'}'}</h5>
+        
         <p >
-          &copy; {new Date().getFullYear()} iTech Co.
+          &copy; {new Date().getFullYear()} SofTech Co.
         </p>
         <div >
           Developed by{' '}

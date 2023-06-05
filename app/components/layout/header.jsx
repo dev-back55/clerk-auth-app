@@ -5,6 +5,8 @@ import { SignInButton, UserButton } from '@clerk/nextjs'
 import { SignedIn, SignedOut } from '@clerk/nextjs/app-beta/client'
 import styles from './header.module.css'
 import Image from 'next/image.js'
+import DarkModeToggle from '../DarkModeToggle/DarkModeToggle.jsx'
+import Softech from "public/coding.svg";
 
 const Header = () => {
 
@@ -15,13 +17,14 @@ const Header = () => {
           <div className={styles.brand}>
             {/* Logo */}
             <Image
-              src={"https://www.svgrepo.com/show/513369/gamepad.svg"}
+              src={Softech}
               width={30}
               height={30}
+              alt="logo"
             />
             <div>
               <Link href='/' className={styles.brandlink}>
-                iTech Informática
+                SofTech
               </Link>
             </div>
           </div>
@@ -32,16 +35,19 @@ const Header = () => {
               </Link>
             </div>
           </SignedIn>
-            <SignedIn>
-              <UserButton />
-            </SignedIn>
-            <SignedOut>
-              <SignInButton mode='modal'>
-                <button className={styles.loginbutton}>
-                  Login
-                </button>
-              </SignInButton>
-            </SignedOut>
+          <div className={styles.containerlogin}>
+              <DarkModeToggle/>
+              <SignedIn>
+                <UserButton />
+              </SignedIn>
+              <SignedOut>
+                <SignInButton mode='modal'>
+                  <button className={styles.loginbutton}>
+                    Login
+                  </button>
+                </SignInButton>
+              </SignedOut>
+          </div>
         </nav>
       </header>
     </>

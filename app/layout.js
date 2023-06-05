@@ -4,6 +4,7 @@ import Footer from "./components/layout/footer.jsx";
 import Header from "./components/layout/header.jsx";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "./context/ThemeContext.js";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,9 +18,13 @@ export default function RootLayout({ children }) {
     <ClerkProvider>
       <html lang="en" className={inter.className}>
         <body>
-          <Header />
-          <main>{children}</main>
-          <Footer />
+          <ThemeProvider>
+            <div className="container">
+              <Header />
+              <main>{children}</main>
+              <Footer />
+            </div>
+          </ThemeProvider>
         </body>
       </html>
     </ClerkProvider>

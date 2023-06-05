@@ -22,6 +22,7 @@
 .brand {
         display: flex;
         gap: 0.5rem;
+        align-items: center;
 }
 
 .brandlink:hover {
@@ -36,6 +37,7 @@
         height: 40px;
         color: #fff;
         padding: 5px 10px;
+        font-size: 0.9rem;
         font-weight: bold;
         cursor: pointer;
         transition: all 0.3s ease;
@@ -43,10 +45,17 @@
         display: inline-block;
         outline: none;
         border-radius: 20px;
-        border: 2px solid #4433ff;
-        background: #4433ff;
+        border: 2px solid #4C4C6D;
+        background: #4C4C6D;
 }
 .loginbutton:hover {
         background: #fff;
-        color: #4433ff
+        color: #4C4C6D
+}
+
+.containerlogin{
+        display: flex;
+        gap: 1rem;
+        justify-content: space-between;
+        align-items: center;
 }
